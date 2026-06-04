@@ -127,8 +127,8 @@
     }
 
     .card {
-      background: var(--surface);
-      border: 1px solid var(--line);
+      background: oklch(0.975 0.006 85);
+      border: 1px solid oklch(0.88 0.008 82);
       border-radius: 12px;
       padding: 28px;
       text-decoration: none;
@@ -141,7 +141,7 @@
 
     .card:hover {
       border-color: var(--ocre);
-      background: var(--surface-2);
+      background: oklch(0.955 0.010 82);
       box-shadow: 0 0 32px var(--ocre-glow), 0 4px 16px rgba(0,0,0,0.35);
       transform: translateY(-3px);
     }
@@ -161,12 +161,12 @@
       font-size: 1.05rem;
       font-weight: 600;
       letter-spacing: -0.01em;
-      color: var(--ink);
+      color: oklch(0.22 0.02 292);
     }
 
     .card p {
       font-size: 0.87rem;
-      color: var(--ink-2);
+      color: oklch(0.38 0.015 290);
       line-height: 1.6;
       flex: 1;
     }

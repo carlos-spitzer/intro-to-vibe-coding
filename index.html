@@ -408,22 +408,57 @@
       </div><!-- /header-text -->
 
       <div class="header-art" aria-hidden="true">
-        <svg viewBox="0 0 360 230" fill="none" xmlns="http://www.w3.org/2000/svg" role="img">
-          <!-- winding road to excellence: from idea (bottom-left) to prototype (top-right) -->
-          <!-- road edges -->
-          <path d="M14 224 C 70 200, 60 150, 130 138 C 205 125, 150 78, 250 64 C 300 57, 300 40, 322 30"
-                stroke="#ffffff" stroke-opacity="0.30" stroke-width="22" stroke-linecap="round"/>
-          <!-- center dashed line -->
-          <path d="M14 224 C 70 200, 60 150, 130 138 C 205 125, 150 78, 250 64 C 300 57, 300 40, 322 30"
-                stroke="#ffffff" stroke-opacity="0.85" stroke-width="2" stroke-linecap="round"
-                stroke-dasharray="2 12"/>
-          <!-- start marker -->
-          <circle cx="14" cy="224" r="4" fill="#ffffff" fill-opacity="0.85"/>
-          <!-- summit flag -->
-          <path d="M322 30 L322 4" stroke="#ffffff" stroke-opacity="0.85" stroke-width="2" stroke-linecap="round"/>
-          <path d="M322 6 L342 12 L322 18 Z" fill="#ffffff" fill-opacity="0.85"/>
-          <!-- four-point spark above summit -->
-          <path d="M300 26 L302 20 L304 26 L310 28 L304 30 L302 36 L300 30 L294 28 Z" fill="#ffffff" fill-opacity="0.55"/>
+        <svg viewBox="0 0 360 210" fill="none" xmlns="http://www.w3.org/2000/svg" role="img">
+          <g stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" fill="none">
+
+            <!-- idea sparks: cluster of stars around the start -->
+            <g fill="#ffffff" stroke="none">
+              <path d="M22 118 L23.4 121 L26.4 122.4 L23.4 123.8 L22 126.8 L20.6 123.8 L17.6 122.4 L20.6 121 Z" fill-opacity="0.7"/>
+              <path d="M44 96 L45.1 98.3 L47.4 99.4 L45.1 100.5 L44 102.8 L42.9 100.5 L40.6 99.4 L42.9 98.3 Z" fill-opacity="0.5"/>
+              <path d="M16 152 L16.9 153.9 L18.8 154.8 L16.9 155.7 L16 157.6 L15.1 155.7 L13.2 154.8 L15.1 153.9 Z" fill-opacity="0.55"/>
+              <path d="M52 134 L52.8 135.7 L54.5 136.5 L52.8 137.3 L52 139 L51.2 137.3 L49.5 136.5 L51.2 135.7 Z" fill-opacity="0.45"/>
+              <circle cx="60" cy="112" r="1.6" fill-opacity="0.45"/>
+              <circle cx="34" cy="170" r="1.4" fill-opacity="0.4"/>
+              <circle cx="70" cy="150" r="1.2" fill-opacity="0.35"/>
+            </g>
+
+            <!-- start node -->
+            <circle cx="40" cy="150" r="6.5" stroke-opacity="0.85" stroke-width="2"/>
+            <circle cx="40" cy="150" r="2.6" fill="#ffffff" stroke="none" fill-opacity="0.9"/>
+
+            <!-- road: start -> explore loop -->
+            <path d="M46 150 C 70 150, 70 116, 96 114" stroke-opacity="0.55" stroke-width="2.4"/>
+            <!-- explore & vibe loop -->
+            <path d="M96 114 C 134 110, 134 70, 104 74 C 80 77, 90 116, 120 117" stroke-opacity="0.55" stroke-width="2.4"/>
+            <!-- to checkpoint -->
+            <path d="M120 117 C 150 118, 162 132, 182 130" stroke-opacity="0.55" stroke-width="2.4"/>
+
+            <!-- checkpoint marker -->
+            <circle cx="192" cy="129" r="7" stroke-opacity="0.85" stroke-width="2"/>
+            <path d="M188.7 129 L191 131.4 L195.4 126.6" stroke-opacity="0.9" stroke-width="1.8"/>
+
+            <!-- checkpoint -> iterate loops -->
+            <path d="M199 129 C 212 128, 214 120, 224 122" stroke-opacity="0.55" stroke-width="2.4"/>
+            <path d="M224 122 C 240 123, 240 100, 254 102 C 266 104, 260 124, 246 125" stroke-opacity="0.55" stroke-width="2.4"/>
+            <path d="M246 125 C 264 126, 262 104, 276 106 C 288 108, 282 126, 268 127" stroke-opacity="0.55" stroke-width="2.4"/>
+            <!-- iterate -> ship -->
+            <path d="M268 127 C 290 129, 304 124, 314 118" stroke-opacity="0.55" stroke-width="2.4"/>
+            <!-- arrowhead -->
+            <path d="M308 113 L316 117 L309 122" stroke-opacity="0.7" stroke-width="2"/>
+
+            <!-- ship & shine: glow rays -->
+            <g stroke-opacity="0.45" stroke-width="2">
+              <path d="M330 80 L330 70"/>
+              <path d="M353 90 L361 86"/>
+              <path d="M307 90 L299 86"/>
+              <path d="M348 70 L355 63"/>
+              <path d="M312 70 L305 63"/>
+            </g>
+            <!-- ship halo + node + check -->
+            <circle cx="330" cy="108" r="17" stroke-opacity="0.3" stroke-width="1.4"/>
+            <circle cx="330" cy="108" r="11" stroke-opacity="0.9" stroke-width="2"/>
+            <path d="M325 108 L329 112 L336 103" stroke-opacity="1" stroke-width="2.2"/>
+          </g>
         </svg>
       </div>
     </div>

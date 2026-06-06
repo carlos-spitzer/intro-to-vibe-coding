@@ -105,8 +105,21 @@
     }
 
     .main-inner {
-      max-width: 900px;
+      max-width: 1180px;
       margin: 0 auto;
+    }
+
+    @media (min-width: 940px) {
+      .main-inner {
+        display: grid;
+        grid-template-columns: 1fr 360px;
+        gap: 56px;
+        align-items: start;
+      }
+      .col-right {
+        position: sticky;
+        top: 32px;
+      }
     }
 
     .section-label {
@@ -122,7 +135,7 @@
     /* ── Cards ── */
     .cards {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(265px, 1fr));
+      grid-template-columns: 1fr;
       gap: 16px;
       margin-bottom: 56px;
     }
@@ -343,9 +356,12 @@
       letter-spacing: 0.04em;
     }
 
+    @media (max-width: 939px) {
+      .col-right { margin-top: 48px; }
+    }
+
     @media (max-width: 600px) {
       header, main, footer { padding-left: 24px; padding-right: 24px; }
-      .cards { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -368,6 +384,8 @@
 
   <main>
     <div class="main-inner">
+
+      <div class="col-left">
 
       <div class="about">
         <h3>Session overview</h3>
@@ -434,7 +452,11 @@
         </div>
       </div>
 
-      <p class="section-label" style="margin-top: 48px;">Workshop materials</p>
+      </div><!-- /col-left -->
+
+      <div class="col-right">
+
+      <p class="section-label">Workshop materials</p>
 
       <div class="cards">
 
@@ -463,6 +485,8 @@
         </a>
 
       </div>
+
+      </div><!-- /col-right -->
 
     </div>
   </main>

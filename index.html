@@ -255,6 +255,75 @@
       color: var(--ink);
     }
 
+    /* ── Prerequisites ── */
+    .prereqs {
+      margin-top: 48px;
+    }
+
+    .prereq-list {
+      margin-top: 6px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .prereq-item {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 16px 18px;
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+
+    .prereq-badge {
+      flex-shrink: 0;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 9.5px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-weight: 500;
+      border-radius: 5px;
+      padding: 4px 8px;
+      margin-top: 2px;
+      white-space: nowrap;
+    }
+
+    .prereq-badge.required {
+      color: var(--ocre-deep);
+      background: var(--ocre-wash);
+    }
+
+    .prereq-badge.recommended {
+      color: var(--ink-2);
+      background: transparent;
+      border: 1px solid var(--line);
+    }
+
+    .prereq-body h4 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 4px;
+    }
+
+    .prereq-body p {
+      font-size: 0.85rem;
+      color: var(--ink-2);
+      line-height: 1.6;
+      max-width: none;
+      margin-bottom: 0;
+    }
+
+    .prereq-body a {
+      color: var(--ocre-deep);
+      text-decoration: none;
+      border-bottom: 1px solid var(--ocre-wash);
+    }
+    .prereq-body a:hover { border-bottom-color: var(--ocre-deep); }
+
     /* ── Footer ── */
     footer {
       border-top: 1px solid var(--line);
@@ -320,6 +389,47 @@
             <div class="time">15 min</div>
             <div class="name">Showcase</div>
           </div>
+        </div>
+      </div>
+
+      <div class="prereqs">
+        <h3 class="section-label">Session pre-requisites</h3>
+        <p style="font-size: 0.88rem; color: var(--ink-2); line-height: 1.68; max-width: 660px; margin-bottom: 18px;">A few things to set up beforehand so you can spend the session building, not configuring.</p>
+
+        <div class="prereq-list">
+
+          <div class="prereq-item">
+            <span class="prereq-badge required">Required</span>
+            <div class="prereq-body">
+              <h4>A Claude account with an active Pro subscription</h4>
+              <p>You'll use Claude throughout the hands-on exercises. A Pro plan (or higher) is needed for Artifacts and Claude Design usage limits. <a href="https://claude.ai" target="_blank" rel="noopener">claude.ai</a></p>
+            </div>
+          </div>
+
+          <div class="prereq-item">
+            <span class="prereq-badge required">Required</span>
+            <div class="prereq-body">
+              <h4>One idea to prototype</h4>
+              <p>Come with a project or idea you'd like to build, anything goes. If you don't have one, we'll provide a default case, but you'll get far more out of the workshop (and reflect more deeply) by bringing your own.</p>
+            </div>
+          </div>
+
+          <div class="prereq-item">
+            <span class="prereq-badge recommended">Recommended</span>
+            <div class="prereq-body">
+              <h4>Claude desktop app installed</h4>
+              <p>Smoother experience than the browser. <a href="https://support.claude.com/es/articles/10065433-instalar-claude-desktop" target="_blank" rel="noopener">Install Claude for macOS or Windows ↗</a></p>
+            </div>
+          </div>
+
+          <div class="prereq-item">
+            <span class="prereq-badge recommended">Recommended</span>
+            <div class="prereq-body">
+              <h4>Claude extension for Google Chrome</h4>
+              <p>Lets Claude act in your browser during the advanced track. <a href="https://claude.com/claude-for-chrome" target="_blank" rel="noopener">Get Claude for Chrome ↗</a></p>
+            </div>
+          </div>
+
         </div>
       </div>
 

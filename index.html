@@ -44,8 +44,33 @@
     }
 
     .header-inner {
-      max-width: 900px;
+      max-width: 1180px;
       margin: 0 auto;
+    }
+
+    @media (min-width: 940px) {
+      .header-inner {
+        display: grid;
+        grid-template-columns: 1fr 360px;
+        gap: 56px;
+        align-items: center;
+      }
+    }
+
+    .header-art {
+      display: none;
+    }
+
+    @media (min-width: 940px) {
+      .header-art {
+        display: block;
+      }
+      .header-art svg {
+        width: 100%;
+        height: auto;
+        max-height: 230px;
+        display: block;
+      }
     }
 
     .tag {
@@ -369,6 +394,7 @@
 
   <header>
     <div class="header-inner">
+      <div class="header-text">
       <p class="tag">&gt;_ Exec. Master · EMBDIE · June 2026</p>
       <h1>Vibe <em>coding</em></h1>
       <p class="subtitle">From idea to prototype in a single session. All workshop materials in one place.</p>
@@ -378,6 +404,27 @@
         <span>Exec. Master · Digital Business, Innovation &amp; Entrepreneurship</span>
         <span class="dot"></span>
         <span>June 2026</span>
+      </div>
+      </div><!-- /header-text -->
+
+      <div class="header-art" aria-hidden="true">
+        <svg viewBox="0 0 360 230" fill="none" xmlns="http://www.w3.org/2000/svg" role="img">
+          <!-- winding road to excellence: from idea (bottom-left) to prototype (top-right) -->
+          <!-- road edges -->
+          <path d="M14 224 C 70 200, 60 150, 130 138 C 205 125, 150 78, 250 64 C 300 57, 300 40, 322 30"
+                stroke="#ffffff" stroke-opacity="0.30" stroke-width="22" stroke-linecap="round"/>
+          <!-- center dashed line -->
+          <path d="M14 224 C 70 200, 60 150, 130 138 C 205 125, 150 78, 250 64 C 300 57, 300 40, 322 30"
+                stroke="#ffffff" stroke-opacity="0.85" stroke-width="2" stroke-linecap="round"
+                stroke-dasharray="2 12"/>
+          <!-- start marker -->
+          <circle cx="14" cy="224" r="4" fill="#ffffff" fill-opacity="0.85"/>
+          <!-- summit flag -->
+          <path d="M322 30 L322 4" stroke="#ffffff" stroke-opacity="0.85" stroke-width="2" stroke-linecap="round"/>
+          <path d="M322 6 L342 12 L322 18 Z" fill="#ffffff" fill-opacity="0.85"/>
+          <!-- four-point spark above summit -->
+          <path d="M300 26 L302 20 L304 26 L310 28 L304 30 L302 36 L300 30 L294 28 Z" fill="#ffffff" fill-opacity="0.55"/>
+        </svg>
       </div>
     </div>
   </header>

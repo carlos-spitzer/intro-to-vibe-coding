@@ -147,11 +147,29 @@
       transform: translateY(-3px);
     }
 
+    .card-pills {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px;
+    }
+
     .card-icon {
       font-family: 'JetBrains Mono', monospace;
       font-size: 11px;
       color: var(--ocre-deep);
       background: var(--ocre-wash);
+      border-radius: 5px;
+      padding: 4px 9px;
+      width: fit-content;
+    }
+
+    .card-duration {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      color: var(--ink-2);
+      background: transparent;
+      border: 1px solid var(--line);
       border-radius: 5px;
       padding: 4px 9px;
       width: fit-content;
@@ -309,21 +327,24 @@
 
       <div class="cards">
 
-        <a class="card" href="Vibe%20Coding%20Workshop%20-%20Deck.html">
-          <span class="card-icon">01 · deck</span>
+        <a class="card" href="Vibe%20Coding%20Workshop%20-%20Deck.html" target="_blank" rel="noopener">
+          <div class="card-pills">
+            <span class="card-icon">01 · deck</span>
+            <span class="card-duration">⏱ 120 min</span>
+          </div>
           <h2>Introduction to Vibe Coding</h2>
           <p>22 slides. Outlearn framing, vibe coding 101, the 4 Ds, the toolkit, exercises, and an optional advanced track.</p>
           <span class="card-arrow">Open deck ↗</span>
         </a>
 
-        <a class="card" href="Vibe%20Coding%20Workshop%20-%20Cheat%20Sheet.html">
+        <a class="card" href="Vibe%20Coding%20Workshop%20-%20Cheat%20Sheet.html" target="_blank" rel="noopener">
           <span class="card-icon">02 · reference</span>
           <h2>Prompt Cheat Sheet</h2>
           <p>One-page quick reference. Spec-first method, copy-paste templates for Design, Build, Iterate, and Debug, plus Do's &amp; Don'ts.</p>
           <span class="card-arrow">Open cheat sheet ↗</span>
         </a>
 
-        <a class="card" href="Vibe%20Coding%20Workshop%20-%20Student%20Handout.html">
+        <a class="card" href="Vibe%20Coding%20Workshop%20-%20Student%20Handout.html" target="_blank" rel="noopener">
           <span class="card-icon">03 · handout</span>
           <h2>Student Handout</h2>
           <p>3-page worksheet. Exercise A (design mockup, 25 min) + Exercise B (build prototype, 40 min) + resources and recommended path.</p>

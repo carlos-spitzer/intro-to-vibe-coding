@@ -303,7 +303,6 @@
       margin-top: 6px;
       display: flex;
       flex-direction: column;
-      gap: 12px;
     }
 
     .prereq-item {
@@ -362,6 +361,53 @@
       border-bottom: 1px solid var(--ocre-wash);
     }
     .prereq-body a:hover { border-bottom-color: var(--ocre-deep); }
+
+    /* ── Prerequisites timeline ── */
+    .tl-item {
+      display: flex;
+      gap: 16px;
+      align-items: stretch;
+      margin-bottom: 12px;
+    }
+    .tl-item:last-child { margin-bottom: 0; }
+
+    .tl-item .prereq-item { flex: 1; }
+
+    .tl-rail {
+      position: relative;
+      width: 30px;
+      flex-shrink: 0;
+    }
+
+    /* connecting line: from this node's centre down to the next node */
+    .tl-rail::after {
+      content: '';
+      position: absolute;
+      left: 14px;
+      top: 15px;
+      width: 2px;
+      height: calc(100% + 12px);
+      background: var(--line);
+    }
+    .tl-item:last-child .tl-rail::after { display: none; }
+
+    .tl-num {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: var(--ocre-wash);
+      color: var(--ocre-deep);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1;
+    }
 
     /* ── Footer ── */
     footer {
@@ -507,39 +553,62 @@
 
       <div class="prereqs">
         <h3 class="section-label">Session pre-requisites</h3>
-        <p style="font-size: 0.88rem; color: var(--ink-2); line-height: 1.68; max-width: 660px; margin-bottom: 18px;">A few things to set up beforehand so you can spend the session building, not configuring.</p>
+        <p style="font-size: 0.88rem; color: var(--ink-2); line-height: 1.68; max-width: 660px; margin-bottom: 22px;">A few things to set up beforehand so you can spend the session building, not configuring. Follow them in order:</p>
 
         <div class="prereq-list">
 
-          <div class="prereq-item">
-            <span class="prereq-badge required">Required</span>
-            <div class="prereq-body">
-              <h4>A Claude account with an active Pro subscription</h4>
-              <p>You'll use Claude throughout the hands-on exercises. A Pro plan (or higher) is needed for Artifacts and Claude Design usage limits. <a href="https://claude.ai" target="_blank" rel="noopener">claude.ai</a></p>
+          <div class="tl-item">
+            <div class="tl-rail"><span class="tl-num">1</span></div>
+            <div class="prereq-item">
+              <span class="prereq-badge required">Required</span>
+              <div class="prereq-body">
+                <h4>A Claude account with an active Pro subscription</h4>
+                <p>You'll use Claude throughout the hands-on exercises. A Pro plan (or higher) is needed for Artifacts and Claude Design usage limits. <a href="https://claude.ai" target="_blank" rel="noopener">claude.ai</a></p>
+              </div>
             </div>
           </div>
 
-          <div class="prereq-item">
-            <span class="prereq-badge required">Required</span>
-            <div class="prereq-body">
-              <h4>One idea to prototype</h4>
-              <p>Come with a project or idea you'd like to build, anything goes. If you don't have one, we'll provide a default case, but you'll get far more out of the workshop (and reflect more deeply) by bringing your own.</p>
+          <div class="tl-item">
+            <div class="tl-rail"><span class="tl-num">2</span></div>
+            <div class="prereq-item">
+              <span class="prereq-badge required">Required</span>
+              <div class="prereq-body">
+                <h4>A GitHub account, and basic familiarity with it</h4>
+                <p>You'll use GitHub during the practice session. Create an account and get comfortable with the basics beforehand. <a href="https://github.com/signup" target="_blank" rel="noopener">Sign up ↗</a> · <a href="https://youtube.com/playlist?list=PL0lo9MOBetEFcp4SCWinBdpml9B2U25-f&si=SVLwPcPW-J57Q3jJ" target="_blank" rel="noopener">GitHub crash-course playlist ↗</a></p>
+              </div>
             </div>
           </div>
 
-          <div class="prereq-item">
-            <span class="prereq-badge recommended">Recommended</span>
-            <div class="prereq-body">
-              <h4>Claude desktop app installed</h4>
-              <p>Smoother experience than the browser. <a href="https://support.claude.com/es/articles/10065433-instalar-claude-desktop" target="_blank" rel="noopener">Install Claude for macOS or Windows ↗</a></p>
+          <div class="tl-item">
+            <div class="tl-rail"><span class="tl-num">3</span></div>
+            <div class="prereq-item">
+              <span class="prereq-badge required">Required</span>
+              <div class="prereq-body">
+                <h4>One idea to prototype</h4>
+                <p>Come with a project or idea you'd like to build, anything goes. If you don't have one, we'll provide a default case, but you'll get far more out of the workshop (and reflect more deeply) by bringing your own.</p>
+              </div>
             </div>
           </div>
 
-          <div class="prereq-item">
-            <span class="prereq-badge recommended">Recommended</span>
-            <div class="prereq-body">
-              <h4>Claude extension for Google Chrome</h4>
-              <p>Lets Claude act in your browser during the advanced track. <a href="https://claude.com/claude-for-chrome" target="_blank" rel="noopener">Get Claude for Chrome ↗</a></p>
+          <div class="tl-item">
+            <div class="tl-rail"><span class="tl-num">4</span></div>
+            <div class="prereq-item">
+              <span class="prereq-badge recommended">Recommended</span>
+              <div class="prereq-body">
+                <h4>Claude desktop app installed</h4>
+                <p>Smoother experience than the browser. <a href="https://support.claude.com/es/articles/10065433-instalar-claude-desktop" target="_blank" rel="noopener">Install Claude for macOS or Windows ↗</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-rail"><span class="tl-num">5</span></div>
+            <div class="prereq-item">
+              <span class="prereq-badge recommended">Recommended</span>
+              <div class="prereq-body">
+                <h4>Claude extension for Google Chrome</h4>
+                <p>Lets Claude act in your browser during the advanced track. <a href="https://claude.com/claude-for-chrome" target="_blank" rel="noopener">Get Claude for Chrome ↗</a></p>
+              </div>
             </div>
           </div>
 

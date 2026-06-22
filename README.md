@@ -11,10 +11,11 @@ This repository holds all the materials for the workshop. Everything is plain HT
 | File | What it is |
 |---|---|
 | [`index.html`](index.html) | Landing page that links the three materials |
-| [`Vibe Coding Workshop - Deck.html`](Vibe%20Coding%20Workshop%20-%20Deck.html) | The 22-slide theory deck |
+| [`Vibe Coding Workshop - Deck.html`](Vibe%20Coding%20Workshop%20-%20Deck.html) | The 23-slide theory deck |
 | [`Vibe Coding Workshop - Cheat Sheet.html`](Vibe%20Coding%20Workshop%20-%20Cheat%20Sheet.html) | One-page prompt quick reference |
 | [`Vibe Coding Workshop - Student Handout.html`](Vibe%20Coding%20Workshop%20-%20Student%20Handout.html) | Three-page student worksheet |
-| [`intro-to-vibe-coding-workshop-SPEC.md`](intro-to-vibe-coding-workshop-SPEC.md) | As-built specification, so the set can be recreated or re-edited |
+| [`docs/workshop-vibecoding-SPEC.md`](docs/workshop-vibecoding-SPEC.md) | As-built specification, the single source of truth for recreating or editing the set |
+| [`docs/prompt-claude-design.md`](docs/prompt-claude-design.md) | The Claude Design prompt that generated the materials, so the whole set can be rebuilt from scratch |
 
 ---
 
@@ -43,7 +44,7 @@ These materials stand on the work of others. Credit where it's due:
 - **andrej-karpathy-skills** (community repo, MIT license), which distills Karpathy's observations into the four principles for better vibe coding. Community-authored, *not* by Karpathy himself.
 - **Anthropic** for the AI Fluency framework (the 4 Ds: Delegation, Description, Discernment, Diligence) and the Claude tooling (Claude + Artifacts, Claude Design, Claude Cowork, Claude Code) the exercises are built around.
 
-All external claims and quotes in the materials were verified accurate as of June 2026; see §7 of the [SPEC](intro-to-vibe-coding-workshop-SPEC.md) for the full verification checklist.
+All external claims and quotes in the materials were verified accurate as of June 2026; see §8 of the [SPEC](docs/workshop-vibecoding-SPEC.md) for the full verification checklist.
 
 ---
 

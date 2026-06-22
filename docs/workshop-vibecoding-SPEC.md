@@ -20,7 +20,7 @@
 | **Practice mode** | Browser + Claude account only (zero installation required) |
 | **GitHub repo** | https://github.com/carlos-spitzer/intro-to-vibe-coding |
 | **GitHub Pages** | https://carlos-spitzer.github.io/intro-to-vibe-coding |
-| **Deliverables** | (1) Theory Deck — 22 slides · (2) Prompt Cheat Sheet — 1 page · (3) Student Handout — 3 pages · (4) GitHub Pages landing site |
+| **Deliverables** | (1) Theory Deck — 23 slides · (2) Prompt Cheat Sheet — 1 page · (3) Student Handout — 3 pages · (4) GitHub Pages landing site |
 
 ---
 
@@ -130,6 +130,14 @@ Slides tagged `>_ optional · after the workshop`.
 - Expo Go: how to run a mobile app on the phone.
 - VS Code vs Cursor comparison.
 - Resources grouped A-E (see §6).
+
+### 3.13 One more thing — the /loop pattern (slide 22)
+"Three agents. Zero sleep." Apple-keynote style closer on autonomous agents.
+- The `/loop` pattern in Claude Code: three specialised agents cycling until the work passes its own spec.
+- Horizontal loop diagram: Planner (plans the work) → Builder (writes the code) → Judge (checks the spec) → back, with `delegate / review / iterate` arc labels and `/loop · until the spec passes` in the centre.
+- YouTube CTA: "Anthropic Workshop: Build Agents That Run for Hours" (youtube.com/watch?v=mR-WAvEPRwE). Credit: approach shared by @AnatoliKopadze.
+
+(The closing "What you walk away with" slide is now slide 23.)
 
 ---
 
@@ -277,7 +285,7 @@ All claims and quotes confirmed accurate as of June 2026:
 
 ## 11. Divergences from original planning
 
-- Deck grew from ~14 to **22 slides**.
+- Deck grew from ~14 to **23 slides** (incl. the closing "one more thing" /loop slide).
 - **Outlearn framing** (Pascal Finette, slides 3-4) added as session opener.
 - **@yacineMTB quote** (slide 12) added as the session's core idea.
 - **Toolkit table** expanded: VS Code/Cursor added as a sixth tool.

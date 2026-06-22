@@ -44,9 +44,9 @@ Footer on every slide/page: "> Vibe coding · EMBDIE · June 2026" plus a page/s
 
 ---
 
-DELIVERABLE 1 — THEORY DECK (22 slides)
+DELIVERABLE 1 — THEORY DECK (23 slides)
 
-Generate exactly 22 slides in this order. The content for each is in the SPEC; this list is the structural skeleton:
+Generate exactly 23 slides in this order. The content for each is in the SPEC; this list is the structural skeleton:
 
 01 · Cover: title "Vibe coding" + subtitle "From idea to prototype in a single session" + author Carlos Spitzer + EMBDIE + ">_ hands-on workshop ▋"
 02 · Session map: "Four moments, two hours" — 10' Outlearn · 20' Vibe coding 101 · 65' Practice · 15' Showcase
@@ -69,7 +69,8 @@ Generate exactly 22 slides in this order. The content for each is in the SPEC; t
 19 · Expo Go: your app on a real phone — 3-step diagram: write/generate → dev server shows QR → scan with Expo Go
 20 · The editor with superpowers: VS Code (free/OSS, vscode.dev, AI agent mode) vs Cursor (AI-first, Composer, free+paid)
 21 · Resources: grouped A-E from the SPEC + Recommended path (5 steps) + [QR / GITHUB REPO LINK] placeholder
-22 · Close: "What you walk away with" — Today / Advanced track / Remember (prototype ≠ production; never paste secrets; escalate in time). Bottom: ">_ All materials in this GitHub repo: [GITHUB REPO LINK]"
+22 · One more thing: "Three agents. Zero sleep." — the /loop pattern in Claude Code. A horizontal loop diagram of three agents (Planner → Builder → Judge) cycling until the work passes its own spec, plus a YouTube video CTA ("Anthropic Workshop: Build Agents That Run for Hours"). Apple-keynote "one more thing" tone
+23 · Close: "What you walk away with" — Today / Advanced track / Remember (prototype ≠ production; never paste secrets; escalate in time). Bottom: ">_ All materials in this GitHub repo: [GITHUB REPO LINK]"
 
 Deck requirements: short affirmative titles; at most 6 lines of text per slide; use simple iconography and diagrams instead of paragraphs; tables (toolkit, timeline) must be legible from 3 metres.
 
